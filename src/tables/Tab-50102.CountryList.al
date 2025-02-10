@@ -18,7 +18,7 @@ table 50102 CountryList
         {
             Caption = 'Capital';
         }
-        field(4; Currency; Code[10])
+        field(4; Currency; Code[50])
         {
             Caption = 'Currency';
         }

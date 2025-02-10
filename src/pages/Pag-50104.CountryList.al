@@ -35,15 +35,13 @@ page 50104 countryList
             {
                 ApplicationArea = All;
                 Caption = 'Import Countries';
+
                 trigger OnAction()
                 var
-
                     APIManagement: Codeunit "SDH API Management";
-
                 begin
-                    APIManagement.GetRecords();
+                    APIManagement.DownloadCountriesJsonObject();
                 end;
-
             }
         }
     }
